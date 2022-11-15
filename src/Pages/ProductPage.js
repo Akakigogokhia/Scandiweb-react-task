@@ -48,7 +48,7 @@ class ProductPage extends React.Component {
     const priceInfo = this.props.fixedProduct.prices.find(
       (prices) => prices.currency.symbol == this.props.currency
     );
-    const price = priceInfo.currency.symbol + priceInfo.amount;
+    const price = priceInfo.currency.symbol + priceInfo.amount.toFixed(2);
     return (
       <div className='productPage__price'>
         <div>PRICE:</div>

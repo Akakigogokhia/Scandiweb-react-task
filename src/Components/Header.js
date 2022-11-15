@@ -5,6 +5,7 @@ import { GET_CATEGORY } from '../Query';
 import { graphql } from '@apollo/client/react/hoc';
 import { store } from '../Store/store';
 import { connect } from 'react-redux';
+import uuid from 'react-uuid';
 
 class Header extends React.Component {
     constructor(props) {
@@ -42,6 +43,7 @@ class Header extends React.Component {
             this.state.loading = false;
             return categories.map((category) => {
                 return (
+                    <Link key={uuid()} to={`/home/${category.name}`} className='link'>
                     <div
                         className='header__option'
                         key={category.name}
@@ -49,6 +51,7 @@ class Header extends React.Component {
                     >
                         {category.name.toUpperCase()}
                     </div>
+                    </Link>
                 );
             });
         }

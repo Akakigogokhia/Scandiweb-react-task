@@ -81,7 +81,7 @@ class CartItem extends React.Component {
             <h1 className='cart__productBrand'>{this.props.info.brand}</h1>
             <div className='cart__productName'>{this.props.info.name}</div>
             <div className='cartItem__price'>
-              {this.props.currency + this.props.priceInfo.amount}
+              {this.props.currency + this.props.priceInfo.amount.toFixed(2)}
               <div className='cartItem__attributes'>
                 {<this.showAttributes />}
               </div>

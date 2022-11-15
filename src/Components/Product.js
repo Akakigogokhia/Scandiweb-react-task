@@ -83,7 +83,7 @@ class Product extends React.Component {
                     <div>{this.props.info.name}</div>
                     <div className='product__price'>
                         {this.props.priceInfo.currency.symbol +
-                            this.props.priceInfo.amount}
+                            this.props.priceInfo.amount.toFixed(2)}
                     </div>
                 </div>
             </div>

@@ -21,24 +21,32 @@ class App extends React.Component {
             <Route
               path='/home'
               element={[
-                <Header key={'1'} />,
-                <CategoryPage key={'2'} />,
-                <MiniCart key={'3'} />,
+                <Header key={1} />,
+                <CategoryPage key={2} />,
+                <MiniCart key={3} />,
+              ]}
+            />
+            <Route
+              path='/home/:category'
+              element={[
+                <Header key={1} />,
+                <CategoryPage key={2} />,
+                <MiniCart key={3} />,
               ]}
             />
 
             <Route
               path='/product/:id'
               element={[
-                <Header key={'4'} />,
-                <ProductPage key={'5'} />,
-                <MiniCart key={'6'} />,
+                <Header key={1} />,
+                <ProductPage key={2} />,
+                <MiniCart key={3} />,
               ]}
             />
 
             <Route
               path='/cart'
-              element={[<Header key={'7'} />, <Cart key={'8'} />]}
+              element={[<Header key={1} />, <Cart key={2} />]}
             />
 
             <Route path='*' element={<Navigate to='/home' />} />

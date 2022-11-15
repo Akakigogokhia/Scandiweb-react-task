@@ -85,7 +85,8 @@ class Header extends React.Component {
                     onClick={() => this.props.ShowMiniCart(false)}
                 >
                     <Link to='/'>
-                        <img src={'../logo.svg'} />
+                        <img onClick={() => this.props.changeCategory('all')} 
+                        src={'../logo.svg'} />
                     </Link>
                 </div>
                 <div className='header__options'>

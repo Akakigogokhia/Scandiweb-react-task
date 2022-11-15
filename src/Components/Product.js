@@ -75,7 +75,7 @@ class Product extends React.Component {
                         }
                         onClick={() => this.addToCart()}
                     >
-                        <img src='./addToCart.svg' />
+                        <img src='../addToCart.svg' />
                     </div>
                 </div>
 

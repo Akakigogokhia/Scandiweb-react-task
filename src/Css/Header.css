@@ -15,6 +15,11 @@
 	height: 3.4em;
 }
 
+.link {
+	text-decoration: none;
+	color: black;
+}
+
 .header__logo {
 	margin-top: 1.9em;
 	margin-right: 6%;

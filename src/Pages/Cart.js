@@ -52,8 +52,9 @@ class Cart extends React.Component {
                 <div className='cart__total'>
                     <div>
                         <div>Tax 21%: </div>
-                        <div className='cart__numbers'>
-                            {symbol + (total * 0.21).toFixed(2)}
+                        {symbol
+                            ? symbol + (total * 0.21).toFixed(2)
+                            : '$' + (total * 0.21).toFixed(2)}
                         </div>
                     </div>
                     <div>
@@ -65,7 +66,9 @@ class Cart extends React.Component {
                     <div>
                         <div>Total: </div>
                         <div className='cart__numbers'>
-                            {symbol + (1.21 * total).toFixed(2)}
+                            {symbol
+                                 ? symbol + (1.21 * total).toFixed(2)
+                                 : '$' + (1.21 * total).toFixed(2)}
                         </div>
                     </div>
                     <div className='cart__orderButton'>

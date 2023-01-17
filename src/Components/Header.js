@@ -36,7 +36,7 @@ class Header extends React.PureComponent {
       const categories = this.props.data.categories;
       return categories.map((category) => {
         return (
-          <Link key={uuid()} to={`/home/${category.name}`} className='link'>
+          <Link key={uuid()} to={`/home`} className='link'>
             <div
               className={
                 this.props.category !== category.name

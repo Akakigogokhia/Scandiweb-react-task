@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Css/Product.css';
-import { store } from '../Store/store';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 

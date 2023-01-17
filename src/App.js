@@ -24,7 +24,7 @@ class App extends React.PureComponent {
               element={[<CategoryPage key={2} />, <MiniCart key={1} />]}
             />
             <Route
-              path='/home/:category'
+              path='/home'
               element={[<CategoryPage key={2} />, <MiniCart key={1} />]}
             />
 

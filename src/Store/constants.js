@@ -1,0 +1,10 @@
+export const CHANGE_CATEGORY = 'CHANGE_CATEGORY';
+export const CHANGE_CURRENCY = 'CHANGE_CURRENCY';
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const SHOW_MINI_CART = 'SHOW_MINI_CART';
+export const COUNT_SUBTOTAL = 'COUNT_SUBTOTAL';
+export const CHANGE_ID = 'CHANGE_ID';
+export const DELETE_PRODUCT = 'DELETE_PRODUCT';
+export const FIX_PRODUCT = 'FIX_PRODUCT';
+export const CHANGE_QUANTITY = 'CHANGE_QUANTITY';
+export const COUNT_QUANTITY = 'COUNT_QUANTITY';

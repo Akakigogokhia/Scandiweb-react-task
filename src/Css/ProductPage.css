@@ -1,0 +1,137 @@
+.productPage {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.productPage__photos {
+  width: max-content;
+  height: 80px;
+  cursor: pointer;
+}
+
+.productPage__photoContainer {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 7%;
+  margin-top: 80px;
+}
+
+.productPage__container > img {
+  max-width: 90%;
+  width: 400px;
+  height: max-content;
+}
+
+.productPage__description {
+  margin-left: 5%;
+  text-align: start;
+  font-size: 30px;
+}
+
+.productPage__brand {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.productPage__container {
+  margin-left: 40px;
+  width: 100%;
+  height: 595px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+}
+
+.productPage__attribute {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.attribute {
+  width: 72px;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.productPage__attributes > div > div {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: start;
+  margin-top: 10px;
+}
+
+.productPage__attributes > div {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.color {
+  margin-bottom: 30px;
+}
+
+#productPage__price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.clicked {
+  color: white;
+  background-color: black;
+}
+
+.col {
+  border: 2px solid white !important;
+  outline: 2px solid green;
+}
+
+.productPage__addToCart {
+  max-width: 90%;
+  width: 292px;
+  height: 52px;
+  background-color: #5ece7b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.productPage__addToCart:disabled {
+  opacity: 0.6;
+}
+.productPage__addToCart:active {
+  background-color: rgb(63, 124, 50);
+}
+
+@media screen and (max-width: 900px) {
+  .productPage__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .productPage__photoContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .productPage {
+    flex-direction: column;
+    margin-bottom: 20em;
+  }
+  .productPage__container {
+    margin-left: 0;
+    align-items: center;
+  }
+}
